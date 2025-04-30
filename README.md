@@ -1,4 +1,4 @@
-# Asus G713PI 0RPM fix
+# Asus G713PI 0RPM fan speed fix
 ## Issue: 
 In this particular model after shutting down and powering the laptop again, the fans don't keep the last profile loaded via armoury crate, so both CPU and GPU fans stay at 0 RPM, overheating the CPU while no OS has loaded and no fan profile exists. This issue may exist in other laptop models as well, but it's a generic solution that could be potentially used in most laptops.
 
