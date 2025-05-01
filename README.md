@@ -13,6 +13,7 @@ The idea is to use our controller as an intermediate and isolate the PWM output 
 ## Schematic diagram:
 ![circuit](https://github.com/user-attachments/assets/9579ecbf-b43d-47ce-95f6-a60cbf5368fe)
 # Required electronics parts:
+1x Rasperry pico (in our case raspberry pico 2, you can possibly use other versions too with slight or no modifications)  
 1x 2.2Ω smd 0403 resistor (acting as a power fuse to protect laptop circuitry in case raspberry goes bad)  
 2x 4.7KΩ smd 0403 resistors (for the 2 new pull-up PWMs)  
 Insulated wire for powering and routing the raspberry pico.  
