@@ -15,7 +15,10 @@ The idea is to use our controller as an intermediate and isolate the PWM output 
 # Required electronics parts:
 1x Rasperry pico (in our case raspberry pico 2, you can possibly use other versions too with slight or no modifications)  
 1x 2.2Ω smd 0403 resistor (acting as a power fuse to protect laptop circuitry in case raspberry goes bad)  
-2x 4.7KΩ smd 0403 resistors (for the 2 new pull-up PWMs)  
 Insulated wire for powering and routing the raspberry pico.  
   
 The other parts are already included on the motherboard (2x 4.7ΚΩ are used as pull-up resistors and 2x 100Ω are used for current limiting to the fan.)  
+
+## How to connect?:
+Move the 2x100Ω resistors that connect the fans' PWM signals to the EC so 1 end is connected to the fan and the other end leave it floating.  
+Then connect the 2 floating ends to the outputs of our Raspberry. Connect the outputs of the EC to the inputs of our Raspberry.
