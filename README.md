@@ -15,7 +15,7 @@ The fans will then be connected to the outputs of our Raspberry in PWM mode. In 
 The PWM signal is read using 2 state machines and run at the default 125Mhz which can precisely capture the PWM of the laptop's signals.
 
 ## Schematic diagram:
-<img width="880" alt="circuit" src="https://github.com/user-attachments/assets/389f6d4e-6894-4fcc-93bf-1e49b0cc24fc" />
+<img width="866" alt="circuit" src="https://github.com/user-attachments/assets/3f600536-895f-4e2e-a7c8-fecf9c925a43" />
 
 # Required electronics parts:
 * 1x Rasperry pico (in our case raspberry pico 2, you can possibly use other versions too with slight or no modifications)  
@@ -28,7 +28,7 @@ The other parts are already included on the motherboard (2x 4.7ΚΩ are used as 
 ## How to connect?:
 * Move the 2x100Ω resistors that connect the fans' PWM signals to the EC so 1 end is connected to the fan and the other end should be floating(not connected).
 * Connect the 2 floating ends using wires to the outputs of our Raspberry (GP16 and GP17), effectively connecting the fans to the raspberry outputs.
-* Connect the PWM signals coming from the EC after the 4.7KΩ resistors to the respective inputs (GP20 for CPU and GP21 for GPU).
+* Connect the PWM signals coming from the EC after the 4.7KΩ resistors to the respective inputs (GP19 for CPU and GP20 for GPU).
 * Place a 2.2Ω resistor at the VSYS input of the raspberry for short circuit protection and connect it to the 3.3VS voltage of the laptop (usually 2 coils one of them is 5V and the other one is 3.3V).
 
 ## Installing program to rapsberry
