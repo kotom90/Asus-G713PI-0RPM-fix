@@ -2,13 +2,12 @@
 <!-- Generator: Circuit Diagram, cdlibrary.dll 4.0.0.0 -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" width="580" height="420" xmlns="http://www.w3.org/2000/svg">
-	<text x="390" y="260" style="font-family:Arial;font-size:11px;text-anchor:start" dominant-baseline="middle" transform="rotate(0, 390, 260)">GPU FAN IN PWM (EC)</text>
-	<line x1="370" y1="290" x2="380" y2="290" style="stroke:rgb(0, 0, 0);stroke-linecap:square;stroke-width:2" />
-	<line x1="370" y1="260" x2="380" y2="260" style="stroke:rgb(0, 0, 0);stroke-linecap:square;stroke-width:2" />
-	<line x1="370" y1="260" x2="370" y2="280" style="stroke:rgb(0, 0, 0);stroke-linecap:square;stroke-width:2" />
-	<line x1="340" y1="280" x2="370" y2="280" style="stroke:rgb(0, 0, 0);stroke-linecap:square;stroke-width:2" />
+	<line x1="370" y1="270" x2="380" y2="270" style="stroke:rgb(0, 0, 0);stroke-linecap:square;stroke-width:2" />
+	<text x="390" y="270" style="font-family:Arial;font-size:11px;text-anchor:start" dominant-baseline="middle" transform="rotate(0, 390, 270)">GPU FAN IN PWM (EC)</text>
+	<line x1="370" y1="270" x2="370" y2="290" style="stroke:rgb(0, 0, 0);stroke-linecap:square;stroke-width:2" />
 	<line x1="340" y1="290" x2="370" y2="290" style="stroke:rgb(0, 0, 0);stroke-linecap:square;stroke-width:2" />
-	<text x="390" y="290" style="font-family:Arial;font-size:11px;text-anchor:start" dominant-baseline="middle" transform="rotate(0, 390, 290)">CPU FAN IN PWM (EC)</text>
+	<line x1="340" y1="300" x2="380" y2="300" style="stroke:rgb(0, 0, 0);stroke-linecap:square;stroke-width:2" />
+	<text x="390" y="300" style="font-family:Arial;font-size:11px;text-anchor:start" dominant-baseline="middle" transform="rotate(0, 390, 300)">CPU FAN IN PWM (EC)</text>
 	<line x1="340" y1="380" x2="380" y2="380" style="stroke:rgb(0, 0, 0);stroke-linecap:square;stroke-width:2" />
 	<line x1="340" y1="340" x2="340" y2="380" style="stroke:rgb(0, 0, 0);stroke-linecap:square;stroke-width:2" />
 	<line x1="360" y1="340" x2="380" y2="340" style="stroke:rgb(0, 0, 0);stroke-linecap:square;stroke-width:2" />

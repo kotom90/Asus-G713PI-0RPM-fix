@@ -18,14 +18,12 @@ defaultSpeedDutyCycle = int(65535 * 0.3)  # 30% of 65535
 cpuOutFanPWMPin.duty_u16(defaultSpeedDutyCycle)
 gpuOutFanPWMPin.duty_u16(defaultSpeedDutyCycle)
 
-# Configure GP20 as input for EC PWM (CPU)
 smFreq = 125_000_000
 gp19CPUin = Pin(19, Pin.IN)
 gp20GPUin = Pin(20, Pin.IN)
 
 smCyclesInECCycle = smFreq / ECPWMFreq
 
-#@asm_pio()
 @rp2.asm_pio()
 def pwm_reader():
     # Measure high time of PWM signal
@@ -51,8 +49,8 @@ smGPU.active(1)
 def dutyCalc(highTime):
     dutyCycleIn = 0xFFFFFFFF - highTime
     dutyCycleOut = int((dutyCycleIn / smCyclesInECCycle) * 65535) * 2 # *2 (half cycle is used only)
-    if dutyCycleOut > 65535:
-        return 65535
+    if dutyCycleOut > 65535: #In any case dutyCycleIn > smCyclesInECCycle
+        return 65535         #return max speed
     elif dutyCycleOut < defaultSpeedDutyCycle: #don't allow <30% RPM
         return defaultSpeedDutyCycle
     return dutyCycleOut
@@ -75,5 +73,4 @@ while True:
         #print(f"High time GPU: {dutyCycleGPUOut:.12f}")
         #saveToLog(f"GPU: {dutyCycleGPUOut}\n")
     #print(f"{sm.rx_fifo()}")
-    time.sleep(0.01)
-
+    time.sleep(0.01) #You can play with this, my laptop Asus G713PI works fine with 10ms delay
